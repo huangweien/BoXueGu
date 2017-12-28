@@ -20,10 +20,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import cn.edu.gdmec.android.BoXueGu.R;
+import cn.edu.gdmec.android.BoXueGu.view.CourseView;
 import cn.edu.gdmec.android.BoXueGu.view.ExerciseView;
+import cn.edu.gdmec.android.BoXueGu.view.MyInfoView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
+//    private MyInfoView mMyInfoView;
+//    private CourseView mCourseView;
     private ExerciseView mExerciseView;
     private FrameLayout mBodyLayout;
     public LinearLayout mBottomLayout;
@@ -90,6 +94,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
            case R.id.bottom_bar_myinfo_btn:
                clearBottomImageState();
                selectDisplayView(2);
+//               if (mMyInfoView != null){
+//                   mMyInfoView.setLoginParams(readLoginStatus());
+//               }
                break;
            default:
                break;
@@ -138,6 +145,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+    //
     private void removeAllView(){
         for(int i=0;i<mBodyLayout.getChildCount();i++){
             mBodyLayout.getChildAt(i).setVisibility(View.GONE);
