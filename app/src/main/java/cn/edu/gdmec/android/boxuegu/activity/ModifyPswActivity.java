@@ -65,7 +65,7 @@ public class ModifyPswActivity extends AppCompatActivity {
                       Toast.makeText(ModifyPswActivity.this,"输入密码与原始密码不一致",
                               Toast.LENGTH_SHORT).show();
                       return;
-                  }else if (!MD5Utils.md5(newPsw).equals(readPsw())){
+                  }else if (MD5Utils.md5(newPsw).equals(readPsw())){
                       Toast.makeText(ModifyPswActivity.this,"输入的新密码与原始密码不能一致",
                               Toast.LENGTH_SHORT).show();
                       return;
@@ -77,7 +77,7 @@ public class ModifyPswActivity extends AppCompatActivity {
                       Toast.makeText(ModifyPswActivity.this,"请再次输入新密码",
                               Toast.LENGTH_SHORT).show();
                       return;
-                  }else if (TextUtils.isEmpty(newPswAgain)){
+                  }else if (!newPsw.equals(newPswAgain)){
                       Toast.makeText(ModifyPswActivity.this,"两次输入的新密码不一致",
                               Toast.LENGTH_SHORT).show();
                       return;

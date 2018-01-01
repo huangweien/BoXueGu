@@ -41,13 +41,14 @@ public class ChangeUserInfoActivity extends AppCompatActivity {
     }
 
     private void init() {
+        //从主界面传递回来的标题和内容
         title = getIntent().getStringExtra("title");
         content = getIntent().getStringExtra("content");
         flag = getIntent().getIntExtra("flag",0);
         tv_main_title = (TextView) findViewById(R.id.tv_main_title);
         tv_main_title.setText(title);
         rl_title_bar = (RelativeLayout) findViewById(R.id.title_bar);
-        rl_title_bar.setBackgroundColor(Color.parseColor("30B4FF"));
+        rl_title_bar.setBackgroundColor(Color.parseColor("#30B4FF"));
         tv_back = (TextView) findViewById(R.id.tv_back);
         tv_save = (TextView) findViewById(R.id.tv_save);
         tv_save.setVisibility(View.VISIBLE);
@@ -107,10 +108,7 @@ public class ChangeUserInfoActivity extends AppCompatActivity {
 
     private void contentListener() {
         et_content.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
-            }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
@@ -158,7 +156,10 @@ public class ChangeUserInfoActivity extends AppCompatActivity {
                 }
 
             }
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
+            }
             @Override
             public void afterTextChanged(Editable editable) {
 

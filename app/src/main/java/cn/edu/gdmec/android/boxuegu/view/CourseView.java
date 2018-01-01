@@ -136,8 +136,8 @@ public class CourseView {
         resetSize();
         if (cadl != null){
             if (cadl.size() > 0){
-                //vpi.setCount(cadl.size());
-                //vpi.setCurrentPosition(0);
+                vpi.setCount(cadl.size());
+                vpi.setCurrentPosition(0);
             }
             ada.setDatas(cadl);
         }

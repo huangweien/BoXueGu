@@ -115,8 +115,8 @@ public class VideoListActivity extends AppCompatActivity implements View.OnClick
                 sv_chapter_intro.setVisibility(View.GONE);
                 tv_intro.setBackgroundColor(Color.parseColor("#FFFFFF"));
                 tv_video.setBackgroundColor(Color.parseColor("#30B4FF"));
-                tv_intro.setTextColor(Color.parseColor("#FFFFFF"));
-                tv_video.setTextColor(Color.parseColor("#000000"));
+                tv_intro.setTextColor(Color.parseColor("#000000"));
+                tv_video.setTextColor(Color.parseColor("#FFFFFF"));
                 break;
             default:
                 break;
@@ -171,7 +171,6 @@ public class VideoListActivity extends AppCompatActivity implements View.OnClick
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-
         }
 
             return sb.toString();
@@ -196,8 +195,8 @@ public class VideoListActivity extends AppCompatActivity implements View.OnClick
             sv_chapter_intro.setVisibility(View.GONE);
             tv_intro.setBackgroundColor(Color.parseColor("#FFFFFF"));
             tv_video.setBackgroundColor(Color.parseColor("#30B4FF"));
-            tv_intro.setTextColor(Color.parseColor("#FFFFFF"));
-            tv_video.setTextColor(Color.parseColor("#000000"));
+            tv_intro.setTextColor(Color.parseColor("#000000"));
+            tv_video.setTextColor(Color.parseColor("#FFFFFF"));
         }
     }
 }
