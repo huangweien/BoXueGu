@@ -18,8 +18,8 @@
         android:layout_height="fill_parent"
         android:layout_marginLeft="10dp"
         android:gravity="center_vertical"
-        android:textColor="#333333"
         android:text="[第一节]Android 简介"
+        android:textColor="#333333"
         android:textSize="14sp"/>
 
 </LinearLayout>

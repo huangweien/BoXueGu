@@ -82,7 +82,7 @@ public class VideoListActivity extends AppCompatActivity implements View.OnClick
                         db.saveVideoPlayList(videoList.get(position),userName);
                     }
                     //跳转到视频播放界面
-                    Intent intent = new Intent(VideoListActivity.this,VideoListActivity.class);
+                    Intent intent = new Intent(VideoListActivity.this,VideoPlayActivity.class);
                     intent.putExtra("videoPath",videoPath);
                     intent.putExtra("position",position);
                     startActivityForResult(intent,1);

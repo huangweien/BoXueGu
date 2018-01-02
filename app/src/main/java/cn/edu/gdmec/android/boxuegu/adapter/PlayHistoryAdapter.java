@@ -107,8 +107,7 @@ public class PlayHistoryAdapter extends BaseAdapter {
 
             @Override
             public void onClick(View view) {
-                if (bean == null)
-                    return;
+                if (bean == null) return;
                 //跳转到视频播放界面
                 Intent intent = new Intent(mContext, VideoPlayActivity.class);
                 intent.putExtra("videoPath",bean.videoPath);

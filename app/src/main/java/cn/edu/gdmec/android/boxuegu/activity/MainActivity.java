@@ -139,8 +139,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 iv_myInfo.setImageResource(R.drawable.main_course_icon_selected);
                 tv_myInfo.setTextColor(Color.parseColor("#0097F7"));
                 rl_title_bar.setVisibility(View.GONE);
-                break;
-        }
+                   }
     }
     //
     private void removeAllView(){

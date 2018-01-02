@@ -122,7 +122,7 @@ public class CourseView {
             @Override
             public void onPageSelected(int position) {
                 if (ada.getSize() > 0){
-                    //由于index数据在滑动时是累加的，因此用inex % ada.getSize()来标记滑动到的当前位置
+                    //由于index数据在滑动时是累加的，因此用index % ada.getSize()来标记滑动到的当前位置
                     vpi.setCurrentPosition(position % ada.getSize());
                 }
             }

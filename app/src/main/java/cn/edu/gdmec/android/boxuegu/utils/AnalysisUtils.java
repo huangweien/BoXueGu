@@ -101,7 +101,7 @@ public class AnalysisUtils {
                         String title=parser.nextText();
                         courseInfo.title=title;
                     }else if ("intro".equals(parser.getName())){
-                        String intro=parser.getName();
+                        String intro=parser.nextText();
                         courseInfo.intro=intro;
                     }
                     break;

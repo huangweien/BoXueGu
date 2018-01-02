@@ -53,7 +53,7 @@ public class VideoPlayActivity extends AppCompatActivity {
             videoView.start();
         }
         @Override
-                public  boolean onKeyDown(int keyCode,KeyEvent event){
+   public  boolean onKeyDown(int keyCode,KeyEvent event){
             Intent data = new Intent();
             data.putExtra("position",position);
             setResult(RESULT_OK,data);
