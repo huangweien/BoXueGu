@@ -67,6 +67,7 @@ public class VideoListAdapter extends BaseAdapter {
             }else{
             vh = (ViewHolder) convertView.getTag();
         }
+        //
         final VideoBean bean = getItem(position);
         vh.iv_icon.setImageResource(R.drawable.course_bar_icon);
         vh.tv_title.setTextColor(Color.parseColor("#333333"));
