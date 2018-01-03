@@ -23,6 +23,7 @@ public class VideoPlayActivity extends AppCompatActivity {
     private MediaController controller;
     private String videoPath;//本地视频
     private int position;//传递视频详情界面点击的视频位置
+    private String uri;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -48,7 +49,12 @@ public class VideoPlayActivity extends AppCompatActivity {
             Toast.makeText(this,"本地没有此视频，暂无法播放",Toast.LENGTH_SHORT).show();
             return;
         }
-            String uri = "android.resource://" + getPackageName() + "/" + R.raw.video11;
+        if (position == 0){
+            uri = "android.resource://" + getPackageName() + "/" + R.raw.video11;
+        }else if(position == 0){
+            uri = "android.resouce://" + getPackageName() + "/" + R.raw.beyond;
+        }
+
             videoView.setVideoPath(uri);
             videoView.start();
         }
