@@ -51,8 +51,8 @@ public class VideoPlayActivity extends AppCompatActivity {
         }
         if (position == 0){
             uri = "android.resource://" + getPackageName() + "/" + R.raw.video11;
-        }else if(position == 0){
-            uri = "android.resouce://" + getPackageName() + "/" + R.raw.beyond;
+        }else if(position == 1){
+            uri = "android.resource://" + getPackageName() + "/" + R.raw.beyond;
         }
 
             videoView.setVideoPath(uri);
